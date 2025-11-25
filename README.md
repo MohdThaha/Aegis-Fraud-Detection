@@ -6,17 +6,11 @@
 
 ---
 
-## 1. Quick download
-[Download this README](sandbox:/mnt/data/README.md)
-
----
-
 ## 2. What this README contains
 - How to run Phase 1 (exact commands)
-- Folder & file checklist 
 - Deep explanation of Phase 1 components 
 - Common errors and fixes
-- Notes about `exploration.ipynb`
+- Notes about this project
 
 ---
 
