@@ -1,6 +1,6 @@
 import os
 import uuid
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 import random
 
 import numpy as np
@@ -26,7 +26,7 @@ def load_config(path: str = "configs/training_config.yaml") -> dict:
 
 def generate_timestamps(n: int) -> list:
     """Generate random timestamps over last 30 days."""
-    now = datetime.utcnow()
+    now = datetime.now(timezone.utc)
     start = now - timedelta(days=30)
     return [
         (start + timedelta(seconds=random.randint(0, 30 * 24 * 3600))).isoformat()
