@@ -1,0 +1,114 @@
+# ------------------------------
+#  Python
+# ------------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.pkl
+*.pickle
+*.log
+
+# Virtual environment
+.venv/
+venv/
+ENV/
+env/
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# PyInstaller
+*.spec
+
+# Byte-compiled / cached
+*.so
+*.dylib
+
+
+# ------------------------------
+#  Project Specific – Aegis
+# ------------------------------
+
+# Data folders (generated at runtime)
+data/raw/
+data/processed/
+data/models/
+
+# Allow empty folders
+!data/.gitkeep
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/models/.gitkeep
+
+# Config files generated during execution
+*.json
+*.yaml.backup
+
+# Synthetic datasets in root
+transactions.csv
+
+
+# ------------------------------
+#  Logs & temp
+# ------------------------------
+logs/
+*.log
+*.tmp
+*.temp
+
+# ------------------------------
+#  FastAPI / Uvicorn
+# ------------------------------
+*.pid
+*.db
+*.sqlite
+*.sqlite3
+
+# ------------------------------
+#  OS / Editor Files
+# ------------------------------
+# VSCode
+.vscode/
+.history/
+
+# PyCharm
+.idea/
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# macOS
+.DS_Store
+.Spotlight-V100
+.Trashes
+
+# Linux
+*~
+
+# ------------------------------
+#  Dependencies cache
+# ------------------------------
+pip-wheel-metadata/
+pip-log.txt
+poetry.lock
+__pypackages__/
+
+# ------------------------------
+#  Build artifacts
+# ------------------------------
+build/
+dist/
+*.egg-info/
+.eggs/
+MANIFEST
+
+# ------------------------------
+#  Ray / MLflow / TF logs (if used later)
+# ------------------------------
+ray_results/
+mlruns/
+mlflow.log
+tensorboard/
